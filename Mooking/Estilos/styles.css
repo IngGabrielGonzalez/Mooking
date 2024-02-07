@@ -1,0 +1,81 @@
+﻿body {
+    
+}
+.bandera {
+    width: 30px;
+    height: 30px;
+  
+}
+.fondo-azul {
+    
+    background-color: #124DA5;
+}
+
+.texto-principal{
+    font-family: Fuente;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.texto-secundario{
+    font-family: Metrofobic;
+}
+.textos-header{
+    font-family: Metrofobic;
+}
+.texto-logo{
+    font-family: Metrofobic;
+}
+
+
+@media screen and (max-width: 991px){
+    .listas{
+        justify-content: center;    
+    }
+}
+
+
+
+
+@font-face {
+    font-family: 'Fuente';
+    src: url('../fuentes/sourcesans3-variablefont_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Metrofobic';
+    src: url('../fuentes/metrophobic-regular.ttf') format('truetype');
+}
+
+
+.carta{
+    border: solid 0.01px;
+    border-color: grey;
+    width: 580px;
+}
+
+.imagen-avion{
+    width: 120px;
+    height: 120px;
+    
+}
+
+
+
+
+/*Estilos para el footer*/
+.pie-pagina {
+    font-family: Fuente;
+    background-color: #124DA5;
+    
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.pie-pagina ul li{
+    list-style: none;
+
+}

@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Mooking.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Estilos/styles.css" rel="stylesheet" />
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <link href="../fontawesome/fontawesome-free-6.5.1-web/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1">
+        <nav class="navbar navbar-expand-lg fondo-azul">
+            <div class="container-fluid">
+                <asp:HyperLink ID="HyperLink4" CssClass="navbar-brand text-light fw-bold p-5 fs-1 texto-logo" runat="server" NavigateUrl="index.aspx">Mooking.com</asp:HyperLink>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse navbarSupportedContent" id="navbarSupportedContent">
+                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <div class="nav-item d-flex">
+                        </div>
+
+                        <div class="nav-item d-flex">
+                        </div>
+
+
+                        <div class="nav-item d-flex">
+                        </div>
+
+
+                    </div>
+                    <div class="d-flex mx-5 align-items-center">
+                        <p class="fw-bold text-light mx-3 mt-3">MXN</p>
+                        <img src="../Imagenes/bandera_mexico.png" class="bandera" />
+                        <i class="fa-regular fa-circle-question text-light fa-xl mx-5"></i>
+                    </div>
+
+
+                    <div class="d-flex mx-5">
+                        <button class="btn text-primary bg-light mx-3" type="submit">Regístrate</button>
+
+                        <button class="btn text-primary bg-light" type="submit">Iniciar sesión</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid fondo-azul d-flex align-items-center textos-header listas">
+            <div class="d-flex mx-5">
+                <div class="text-center">
+                    <i class="fa-solid fa-plane text-light"></i>
+                </div>
+                <asp:HyperLink ID="HyperLink1" runat="server" CssClass="mx-3 mb-3 text-decoration-none text-light" NavigateUrl="VuelosRegistrados.aspx" Text="Nuestros vuelos"></asp:HyperLink>
+
+
+            </div>
+            <div class="d-flex">
+                <div class="text-center">
+                    <i class="fa-solid fa-magnifying-glass-location text-light"></i>
+                </div>
+                <asp:HyperLink ID="HyperLink2" runat="server" CssClass="mx-3 mb-3 text-decoration-none text-light" NavigateUrl="BuscarPorId.aspx" Text="Buscar vuelo"></asp:HyperLink>
+            </div>
+            <div class="d-flex mx-5">
+                <div class="text-center">
+                    <i class="fa-solid fa-globe text-light"></i>
+                </div>
+                <asp:HyperLink ID="HyperLink3" runat="server" CssClass="mx-3 mb-3 text-decoration-none text-light" NavigateUrl="VuelosRegistrados.aspx" Text="Nuestros destinos"></asp:HyperLink>
+            </div>
+        </div>
+        <div class="container-fluid fondo-azul text-light">
+            <p class="text-uppercase texto-principal mx-5">Encuentra tu próximo vuelo</p>
+            <p class="texto-secundario fs-4 mx-5">Busca ofertas en hoteles, vuelos y mucho más...</p>
+
+        </div>
+
+    </form>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    <footer class="pie-pagina fondo-azul">
+
+        <div class="container text-center text-light">
+            <p>¡Ahorra tiempo y dinero!</p>
+            <p>Regístrate y te enviaremos las mejores ofertas para ti</p>
+
+            <div class="d-flex container justify-content-center">
+                <input class="mx-1" type="text" placeholder="Tu correo">
+                <button class="btn btn-primary">SUSCRÍBETE</button>
+            </div>
+            
+            <ul class="text-light d-flex justify-content-center">
+                <li class="mx-4">Gestiona tus reservas online</li>
+                <li class="mx-4">Tu cuenta</li>
+                <li class="mx-4">Centro de ayuda</li>
+                <li class="mx-4">Atención al cliente</li>
+                <li class="mx-4">Mooking.com for Business</li>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+</html>
