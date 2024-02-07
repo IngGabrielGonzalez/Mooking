@@ -125,6 +125,7 @@
     <Content Include="Imagenes\bandera_mexico.png" />
     <Content Include="Imagenes\cabos.jpg" />
     <Content Include="Imagenes\cancun.jpg" />
+    <Content Include="Imagenes\fondo.jpeg" />
     <Content Include="Paginas\BuscarPorId.aspx" />
     <Content Include="Paginas\Index.aspx" />
     <Content Include="Paginas\RegistrarVuelos.aspx" />

@@ -47,26 +47,54 @@
 }
 
 
+.parallax-image {
+    background-image: url('../Imagenes/avion.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
 .carta{
-    border: solid 0.01px;
+    border: 0.5px solid;
+    border-radius: 10px;
     border-color: grey;
     width: 580px;
 }
 
-.imagen-avion{
-    width: 120px;
-    height: 120px;
-    
+.imagen-avion {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
+.fondo{
+    height: 250px;
+    align-items:center;
+    background-color: #dcdcdc;
+}
 
+.cartaDos {
+    background-image: url('../Imagenes/fondo.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0.5px solid;
+    border-radius: 10px;
+    border-color: grey;
+    width: 580px;
+}
 
 
 /*Estilos para el footer*/
 .pie-pagina {
     font-family: Fuente;
     background-color: #124DA5;
-    
     left: 0;
     bottom: 0;
     width: 100%;
